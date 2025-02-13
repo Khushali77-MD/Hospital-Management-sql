@@ -1,4 +1,4 @@
- --  Top 5 Doctors with Most Completed Appointments
+--  Top 5 Doctors with Most Completed Appointments
 SELECT d.name, COUNT(a.appointment_id) AS total_appointments
 FROM Doctors d
 JOIN Appointments a ON d.doctor_id = a.doctor_id
