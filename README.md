@@ -68,7 +68,7 @@ WHERE expiry_date BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 30 DAY);
 - **💰 Revenue Analysis:** The highest revenue-generating department is **Cardiology**, followed by **Orthopedics**.
 - **🏆 Doctor Performance:** `Dr. John Doe` had the most completed appointments in the last 6 months.
 - **📊 Patient Trends:** `30%` of patients have visited the hospital more than once in the last year.
-- **💊 Medicine Stock Management:** `Paracetamol` and `Amoxicillin` are the most prescribed medicines, and stock levels need regular updates.
+- **💊 Medicine Stock Management:**  `Amoxicillin` are the most prescribed medicines, and stock levels need regular updates.
 
 
 ## 🚀 Next Steps & Improvements
