@@ -1,0 +1,68 @@
+# 📜  Hospital_Sample_Data.sql.
+
+-- Insert sample data into Patients table
+INSERT INTO Patients (patient_id, name, dob, gender, contact, email, address, medical_history) VALUES
+(1, 'Alice Johnson', '1985-07-15', 'Female', '123-456-7890', 'alice@example.com', '123 Main St, NY', 'Diabetes'),
+(2, 'Bob Smith', '1990-03-22', 'Male', '987-654-3210', 'bob@example.com', '456 Elm St, CA', 'Asthma'),
+(3, 'Charlie Brown', '1978-09-10', 'Male', '555-666-7777', 'charlie@example.com', '789 Pine St, TX', 'Hypertension');
+
+-- Insert sample data into Departments table
+INSERT INTO Departments (department_id, name) VALUES
+(1, 'Cardiology'),
+(2, 'Neurology'),
+(3, 'Orthopedics');
+
+-- Insert sample data into Doctors table
+INSERT INTO Doctors (doctor_id, name, specialty, contact, email, department_id) VALUES
+(1, 'Dr. John Doe', 'Cardiologist', '111-222-3333', 'johndoe@example.com', 1),
+(2, 'Dr. Sarah Lee', 'Neurologist', '444-555-6666', 'sarahlee@example.com', 2),
+(3, 'Dr. Mark Wilson', 'Orthopedic Surgeon', '777-888-9999', 'markwilson@example.com', 3);
+
+-- Insert sample data into Appointments table
+INSERT INTO Appointments (appointment_id, patient_id, doctor_id, appointment_date, status, purpose) VALUES
+(1, 1, 1, '2025-02-01', 'Completed', 'Heart Checkup'),
+(2, 2, 2, '2025-02-02', 'Scheduled', 'Migraine Consultation'),
+(3, 3, 3, '2025-02-03', 'Completed', 'Knee Pain');
+
+-- Insert sample data into Billing table
+INSERT INTO Billing (bill_id, patient_id, appointment_id, total_amount, payment_status, insurance_provider) VALUES
+(1, 1, 1, 200, 'Paid', 'Blue Cross'),
+(2, 2, 2, 150, 'Pending', 'Aetna'),
+(3, 3, 3, 300, 'Paid', 'United Healthcare');
+
+-- Insert sample data into Medicine table
+INSERT INTO Medicine (medicine_id, name, stock, dosage, expiry_date, type) VALUES
+(1, 'Paracetamol', 100, '500mg', '2025-12-01', 'Tablet'),
+(2, 'Ibuprofen', 50, '200mg', '2025-11-15', 'Tablet'),
+(3, 'Amoxicillin', 30, '250mg', '2025-10-20', 'Capsule');
+
+-- Insert sample data into Pharmacy table
+INSERT INTO Pharmacy (pharmacy_id, patient_id, medicine_id, quantity, date_issued) VALUES
+(1, 1, 1, 10, '2025-02-05'),
+(2, 2, 2, 5, '2025-02-06'),
+(3, 3, 3, 7, '2025-02-07');
+
+-- Insert sample data into Rooms table
+INSERT INTO Rooms (room_id, room_number, room_type, status) VALUES
+(1, 101, 'Single', 'Occupied'),
+(2, 102, 'Double', 'Available'),
+(3, 103, 'ICU', 'Occupied');
+
+-- Insert sample data into Room_assignments table
+INSERT INTO Room_assignments (assignment_id, patient_id, room_id, start_date, end_date) VALUES
+(1, 1, 1, '2025-02-01', '2025-02-10'),
+(2, 2, 2, '2025-02-02', NULL),
+(3, 3, 3, '2025-02-03', '2025-02-08');
+
+-- Insert sample data into Ambulance table
+INSERT INTO Ambulence (log_id, patient_id, pickup_location, dropoff_location, transport_time, status) VALUES
+(1, 1, 'Home', 'Hospital', '08:30:00', 'Completed'),
+(2, 2, 'Workplace', 'Hospital', '10:15:00', 'Completed'),
+(3, 3, 'Home', 'Hospital', '12:45:00', 'Pending');
+
+-- Insert sample data into Medical_report table
+INSERT INTO Medical_report (patient_id, appointment_id, diagnosis, treatment, prescription, medical_report) VALUES
+(1, 1, 'Hypertension', 'Medication & Diet', 'Paracetamol, Low-sodium diet', 'Patient advised to monitor BP regularly'),
+(2, 2, 'Migraine', 'Pain Management', 'Ibuprofen, Hydration', 'Stress reduction recommended'),
+(3, 3, 'Arthritis', 'Physiotherapy', 'Amoxicillin, Exercise', 'Follow-up required after 2 weeks');
+
