@@ -42,7 +42,7 @@ HAVING admission_count > 1;
 
 
 
-## --  List All Medicines Expiring in the Next 30 Days
+--  List All Medicines Expiring in the Next 30 Days
 SELECT name, expiry_date 
 FROM Medicine
 WHERE expiry_date BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 30 DAY);
