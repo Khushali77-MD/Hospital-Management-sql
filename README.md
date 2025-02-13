@@ -8,7 +8,7 @@ This project is a **relational database system** designed to manage hospital ope
 - **Database:** MySQL / SQL Server  
 - **Data Analysis:** SQL (Joins, Aggregations, Window Functions, CTEs)  
 - **Optimization:** Indexing, Performance Tuning  
-- **Visualization (Optional):** Power BI / Tableau / Python  
+- **Visualization (Optional):** Power BI / Python  
 
 ## 📂 Database Schema Overview
 
