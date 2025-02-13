@@ -23,6 +23,9 @@ This project is a **relational database system** designed to manage hospital ope
 | **Rooms**        | Manages hospital room assignments |
 | **Ambulance**    | Logs emergency patient transport details |
 
+![ER Diagram](visuals/er_diagram.png)
+
+
 ## 🔑 Key SQL Queries
 
 ```sql
