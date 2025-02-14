@@ -2,7 +2,7 @@
 
 ## 🚀 Project Overview
 
-This project is a **relational database system** designed to manage hospital operations, including patients, doctors, appointments, billing, and prescriptions. Using **advanced SQL queries**, the project extracts valuable insights such as **top-performing doctors, revenue trends, and patient admission patterns**.
+This project is a **relational database system** designed to manage hospital operations, including patients, doctors, appointments, billing, pharmacy,ambulence,rooms. Using **advanced SQL queries**, the project extracts valuable insights such as **top-performing doctors, revenue trends, and patient admission patterns**.
 
 ## 🛠 Tech Stack  
 - **Database:** MySQL / SQL Server  
