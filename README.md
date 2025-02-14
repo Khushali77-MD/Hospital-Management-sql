@@ -23,10 +23,8 @@ This project is a **relational database system** designed to manage hospital ope
 | **Rooms**        | Manages hospital room assignments |
 | **Ambulance**    | Logs emergency patient transport details |
 
-![ER Diagram](https://github.com/Khushali77-MD/Hospital-Management-sql/blob/main/ER%20-%20DIAGRAM.png)
 
-
-## 🔑 Key SQL Queries
+\## 🔑 Key SQL Queries
 
 ```sql
 -- 1. Top 5 Doctors with Most Completed Appointments
